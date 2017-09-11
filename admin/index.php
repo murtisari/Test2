@@ -62,7 +62,7 @@ $key=$_GET['key'];
 				<div class="col-md-3">
 				</div>
 				<div class="col-md-3">
-				<a href='detailuser.php?id=1'><img  src="../no-image.png"><br></a>
+				<a href='detailuser.php?id=".$item->id."'><img  src="../no-image.png"><br></a>
 				</div>
 				<div class="col-md-3">
 				
