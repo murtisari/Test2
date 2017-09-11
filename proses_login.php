@@ -15,22 +15,22 @@ $_SESSION[password] = $r[password];
 
 if($_POST['username'] != $_SESSION[username] and $_POST['password'] != $_SESSION[password] ){
 	echo"<script language='javascript'>alert('Username / password salah, mohon diisi kembali dengan data yang benar')</script>";
-	echo"<script language='javascript'>window.location = 'login.php'</script>";	
+	echo"<script language='javascript'>window.location = 'index.php'</script>";	
 	}
 
 
 elseif (empty($_POST[username]) AND empty($_POST[password])){
 	
 	echo"<script language='javascript'>alert('Mohon isi dulu username dan password !')</script>";
-	echo"<script language='javascript'>window.location = 'login.php'</script>";
+	echo"<script language='javascript'>window.location = 'index.php'</script>";
 	}
 elseif (empty($_SESSION[username]) and ($_POST[password])==TRUE){
 	echo"<script language='javascript'>alert('Mohon isi dulu username anda!')</script>";
-	echo"<script language='javascript'>window.location = 'login.php'</script>";		
+	echo"<script language='javascript'>window.location = 'index.php'</script>";		
 	}
 elseif (($_POST[username])==TRUE AND empty($_SESSION[password])){
 	echo"<script language='javascript'>alert('Mohon isi dulu password anda!')</script>";
-	echo"<script language='javascript'>window.location = 'login.php'</script>";		
+	echo"<script language='javascript'>window.location = 'index.php'</script>";		
 	}
 	
 else{
@@ -54,7 +54,7 @@ else{
 		
 	else{
 		 echo"<script language='javascript'>alert('username dan password tidak sesuai')</script>";
-		 echo"<script language='javascript'>window.location = 'login.php'</script>";	
+		 echo"<script language='javascript'>window.location = 'index.php'</script>";	
 		 }	
 		}
 }
